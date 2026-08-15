@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+!.env.*.example
+runs/
+local/
+/results/*.mp4
+/results/*.srt
+# Retained inputs stay local until redistribution is reviewed.
+data/**/*.jsonl
+data/eval/tab.raw.json
+data/tune/base.onnx
+weights/deep/
+weights/raw.onnx
+weights/source.onnx
+weights/head.pt
+results/predictions/
