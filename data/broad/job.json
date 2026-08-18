@@ -1,0 +1,26 @@
+{
+  "models": [
+    [
+      "deep",
+      "google/bert_uncased_L-6_H-128_A-2"
+    ],
+    [
+      "tall",
+      "google/bert_uncased_L-12_H-128_A-2"
+    ]
+  ],
+  "teacher": "google-bert/bert-base-uncased",
+  "epochs": {
+    "teacher": 3,
+    "student": 4
+  },
+  "batch": {
+    "teacher": 16,
+    "student": 32
+  },
+  "revisions": {
+    "google-bert/bert-base-uncased": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "google/bert_uncased_L-6_H-128_A-2": "cc3ddb10622cdf031e6c96cf314284cd788bc24b",
+    "google/bert_uncased_L-12_H-128_A-2": "769ccb240a0acd026d94f84a96e8a754e4b8eff1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "source": "RedactionBench/RedactionBench",
+  "revision": "d45e9cec89bc49c69355e252fec29cc0229982f6",
+  "split": "test",
+  "license": "CC-BY-4.0",
+  "raw_sha256": "faf48be70c8bd9dd18aa730db2506fbf189a17be096a1c9bb28820a9a9531619",
+  "converted_sha256": "559e824ab5bfecf472d905bce9ee98f197a6ba27b0ee2b776aecd71478edfd61",
+  "rows": 200,
+  "use": "evaluation only; preserve mandatory/contextual separately"
+}

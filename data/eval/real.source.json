@@ -1,0 +1,9 @@
+{
+  "rows": 120,
+  "sha256": "148343225f8423681cf2f80469f88e96cb1b753195dceb98fefcaaa3a6350d91",
+  "status": "Agent-authored templated synthetic challenge, root corrected before training; NOT human gold",
+  "policy": "Detect all named people including speakers; email/URL atomic; names and locations in personal records and personal dates/times; generic counts/version/public dates not sensitive",
+  "changes": "Added 12 missing speaker names, 12 office locations and contact times, 12 log timestamps; reconciled DOB age against 2026-08-19 (day-first numeric dates); replaced 12 contradictory name negatives with distinct generic benign examples",
+  "region": "Scenario metadata only, not population or country-stratified proof",
+  "use": "Frozen evaluation only; no training"
+}

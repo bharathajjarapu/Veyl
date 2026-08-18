@@ -1,0 +1,10 @@
+{
+  "title": "Global",
+  "id": "bharathajjarapu/global",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "description": "Private English PII training corpus. NVIDIA Nemotron-PII https://huggingface.co/datasets/nvidia/Nemotron-PII CC BY 4.0, attributed to NVIDIA; subset, label mapping, validation, group splits, exact external evaluation exclusion and span-preserving augmentations in data.json. Additional 44 agent-audited Claude Haiku authored snippets; synthetic, not human gold. Pinned provenance in data.json; TAB, PIIMB and RedactionBench are not uploaded."
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Fusion",
+  "id": "bharathajjarapu/fusion",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "description": "Private controlled neural PII fine-tuning experiment. Training: existing NVIDIA Nemotron-PII train replay (CC BY4.0 attributed to NVIDIA), source-ai4privacy OpenPII train sampled from pinned ranges (CC BY4.0 attributed to ai4privacy), and128 audited Luna synthetic snippets. Source-limited validation: original NV train-heldout, OpenPII train-heldout,117 audited Haiku5.5 partial snippets not used for training. Gretel train, official source val/test and benchmark corpora are not included. base.onnx is our previous Google-based Apache2 trained model reference, retaining upstream rights. Exact inputs/provenance in data.json. Synthetic data and inspected development evidence, not human blind testing."
+}

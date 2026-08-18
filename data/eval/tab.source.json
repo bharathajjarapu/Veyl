@@ -1,0 +1,52 @@
+{
+  "source": "Text Anonymization Benchmark (TAB)",
+  "revision": "558e09e26d6b36f5f78440074e6a233946d98bd9",
+  "split": "echr_test.json (test only)",
+  "url": "https://raw.githubusercontent.com/NorskRegnesentral/text-anonymization-benchmark/558e09e26d6b36f5f78440074e6a233946d98bd9/echr_test.json",
+  "license": "MIT",
+  "sha256": "cd0f0f15f84a8739654c7cf30c6be8ce27b051ef73974d39d792a0cb8c846379",
+  "eval_sha256": "b2962007d8eb49f5f13dc8e8715f8afa632b2115014ef94a6f7b476584e0614b",
+  "documents": 127,
+  "annotator_document_rows": 555,
+  "document_rows_by_annotator": {
+    "annotator1": 60,
+    "annotator12": 43,
+    "annotator3": 44,
+    "annotator4": 46,
+    "annotator5": 34,
+    "annotator6": 44,
+    "annotator7": 47,
+    "annotator8": 56,
+    "annotator10": 63,
+    "annotator9": 27,
+    "annotator2": 46,
+    "annotator11": 45
+  },
+  "span_counts": {
+    "DIRECT": 1612,
+    "mapped:PII": 2813,
+    "mapped:PERSON": 4138,
+    "QUASI": 19197,
+    "mapped:DATE_TIME": 9536,
+    "mapped:ORGANIZATION": 1946,
+    "mapped:LOCATION": 1459,
+    "mapped:SENSITIVE_ATTRIBUTE": 917
+  },
+  "documents_with_overlapping_selected_spans_within_annotator": 16,
+  "mapping": {
+    "PERSON": "PERSON",
+    "ORG": "ORGANIZATION",
+    "LOC": "LOCATION",
+    "DATETIME": "DATE_TIME",
+    "DEM": "SENSITIVE_ATTRIBUTE"
+  },
+  "fallback_type": "PII",
+  "included_identifier_types": [
+    "DIRECT",
+    "QUASI"
+  ],
+  "excluded_identifier_type": "NO_MASK",
+  "annotation": "Manual standoff annotations from the source repository; per-document quality_checked values remain in raw test.json.",
+  "policy": "Each document-annotator pair is scored separately; documents repeat and rows are not statistically independent. Report per-annotator metrics; any pooled score is descriptive and weights documents by number of annotations, with no independence or confidence-interval claim. Preserve each original half-open span and all overlaps. An optional conservative secondary view may union DIRECT/QUASI character spans across annotators per document, but report separately as a coverage upper bound. Generic PII is used for unsupported entity types, while source_type retains the original category.",
+  "use": "evaluation only; never training or tuning"
+}

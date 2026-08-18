@@ -1,0 +1,8 @@
+{
+  "source": "piimb/pii-masking-benchmark",
+  "revision": "7d797b9fc8dc1942cef60fbe532e7d1a0e31b655",
+  "license": "CC-BY-NC-4.0",
+  "url": "https://huggingface.co/datasets/piimb/pii-masking-benchmark",
+  "sha": "5ff46f3a80316318794f94596fa374060d70f2f32a85909f958cbabc70bae41f",
+  "use": "Private official test evaluation only; not training."
+}

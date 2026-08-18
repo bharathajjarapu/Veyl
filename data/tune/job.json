@@ -1,0 +1,28 @@
+{
+  "name": "age-residual-v1",
+  "tokenizer": {
+    "base": "google/bert_uncased_L-6_H-128_A-2",
+    "revision": "cc3ddb10622cdf031e6c96cf314284cd788bc24b"
+  },
+  "start": "Tagger/deep/best",
+  "baseline_o_bias": 1,
+  "steps": 1200,
+  "seed": 7,
+  "head": {
+    "types": [
+      "AGE"
+    ],
+    "parameters": 258,
+    "initial_bias": -10,
+    "peak_lr": 0.003,
+    "class_weight": 1,
+    "calibration_bias_grid": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  "benign_exposures": 3
+}
