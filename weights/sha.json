@@ -1,0 +1,5 @@
+{
+  "model.onnx": "6c84a89021370c6b523babca91b019401638254b9de8aab4e192266fc9da1e6f",
+  "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+  "labels.json": "b945b66d77111228f7aae42cf85b4547e2f1b3a01a3c723b16e50e03db0a2253"
+}
