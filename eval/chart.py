@@ -378,7 +378,7 @@ audit = {
 }
 for path in [
     Path(__file__),
-    ROOT / "docs/eval.md",
+    ROOT / "docs/EVAL.md",
     *[CHART / name for name in ["official.json", "weights.json", "local.json"]],
     *[
         OUT / name

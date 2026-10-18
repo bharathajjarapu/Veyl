@@ -1,5 +1,7 @@
 # VEYL
 
+Vigilant Entity Yield Limiter
+
 VEYL detects English personal information and returns character spans for redaction. A BERT student learns from a trained teacher. A separate AGE head changes age predictions only where the student predicts O.
 
 | Model | Value |
@@ -11,9 +13,7 @@ VEYL detects English personal information and returns character spans for redact
 | INT8 ONNX | 5,426,280 bytes |
 | ONNX, tokenizer and labels | 6,138,595 bytes |
 
-<video src="https://github.com/bharathajjarapu/Veyl/raw/refs/heads/main/results/Veyl.webm" controls width="960"></video>
-
-[Render instructions](video/README.md)
+https://github.com/user-attachments/assets/c2277414-be1c-4550-831b-134bef527be0
 
 ## Setup
 
@@ -26,7 +26,7 @@ uv run --locked python data/check.py
 uv run --locked python eval/score.py --check
 ```
 
-The default environment requires NumPy. [Training](docs/train.md) covers PyTorch setup, FP32 inference and ONNX reconstruction. The [notebook](notebooks/model.ipynb) runs the CPU checks.
+The default environment requires NumPy. [Training](docs/TRAIN.md) covers PyTorch setup, FP32 inference and ONNX reconstruction. The [notebook](notebooks/model.ipynb) runs the CPU checks.
 
 ## Evaluation
 
@@ -37,7 +37,7 @@ The default environment requires NumPy. [Training](docs/train.md) covers PyTorch
 | TAB, pooled annotator rows | 67.84% |
 | RedactionBench, mandatory policy | 68.56% |
 
-These local scores use INT8 ONNX Runtime Web with one WASM thread. PIIMB covers 121,409 English rows. Its mean task precision and recall are 78.04% and 91.50%. Dataset policies differ. See [evaluation](docs/eval.md) and the [comparison CSV](results/chart/table.csv).
+These local scores use INT8 ONNX Runtime Web with one WASM thread. PIIMB covers 121,409 English rows. Its mean task precision and recall are 78.04% and 91.50%. Dataset policies differ. See [evaluation](docs/EVAL.md) and the [comparison CSV](results/chart/table.csv).
 
 The model misses PII and can redact ordinary words or organization names. Mixed-script boundaries remain unreliable. Other runtimes require separate evaluation. The cleaned training recipes passed CPU and gradient checks, but have not completed another full training run.
 
@@ -54,3 +54,7 @@ The model misses PII and can redact ordinary words or organization names. Mixed-
 | [RedactionBench](https://huggingface.co/datasets/RedactionBench/RedactionBench) | CC-BY-4.0 |
 
 Manifests in `data/` record revisions, hashes and attribution. No project code or model license has been selected.
+
+---
+
+Made with ❤️ and 💻 by [Bharath Ajjarapu](https://github.com/bharathajjarapu).
