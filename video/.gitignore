@@ -1,9 +1,0 @@
-/.venv/
-/build/
-/media/
-/film.mp4
-/film.srt
-/audio/
-__pycache__/
-*.py[cod]
-*.log

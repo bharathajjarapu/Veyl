@@ -39,8 +39,6 @@ The default environment requires NumPy. [Training](docs/TRAIN.md) covers PyTorch
 
 These local scores use INT8 ONNX Runtime Web with one WASM thread. PIIMB covers 121,409 English rows. Its mean task precision and recall are 78.04% and 91.50%. Dataset policies differ. See [evaluation](docs/EVAL.md) and the [comparison CSV](results/chart/table.csv).
 
-The model misses PII and can redact ordinary words or organization names. Mixed-script boundaries remain unreliable. Other runtimes require separate evaluation. The cleaned training recipes passed CPU and gradient checks, but have not completed another full training run.
-
 ## Files and licenses
 
 `src/` provides inference and export; `train/` contains training recipes; `eval/` contains benchmark tools. `weights/` holds model assets. `results/` contains charts, the CSV and video. Detailed reports, predictions and comparison sources stay Git-ignored in `local/`. Browser code lives in the separate Web repository.
@@ -53,7 +51,7 @@ The model misses PII and can redact ordinary words or organization names. Mixed-
 | [TAB](https://github.com/NorskRegnesentral/text-anonymization-benchmark) | MIT |
 | [RedactionBench](https://huggingface.co/datasets/RedactionBench/RedactionBench) | CC-BY-4.0 |
 
-Manifests in `data/` record revisions, hashes and attribution. No project code or model license has been selected.
+VEYL's original code, documentation, model contributions and generated project media are licensed under [Apache-2.0](LICENSE). Third-party models, datasets, fonts and logos retain their own terms. Manifests in `data/` record revisions, hashes and attribution.
 
 ---
 
